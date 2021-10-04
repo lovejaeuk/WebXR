@@ -4,7 +4,6 @@
     "description": "A simple scene using Babylon.js, typescript and webpack. What could go wrong?",
     "main": "index.ts",
     "dependencies": {
-        "ammo.js": "github:kripken/ammo.js",
         "moment": "^2.29.1",
         "socket.io-client": "^2.3.0"
     },

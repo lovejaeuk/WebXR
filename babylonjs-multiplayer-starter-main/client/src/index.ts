@@ -7,18 +7,8 @@ import { MeshManager } from "./MeshManager";
 import { KeyboardInputManager } from "./KeyboardInputManager";
 import { Player } from "./Player";
 
-const getModuleToLoad = (): string | undefined => {
-    // ATM using location.search
-    if (!location.search) {
-        return;
-    } else {
-        return location.search.substr(location.search.indexOf("scene=") + 6);
-    }
-};
-
 export const babylonInit = async (): Promise<void> => {
     // get the module to load
-    const moduleName = getModuleToLoad();
     const createSceneModule = await getSceneModuleWithName("default");
 
     // Execute the pretasks, if defined
