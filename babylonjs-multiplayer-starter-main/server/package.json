@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/index.ts",
-    "build": "tsc -p ./"
+    "start": "node ./build/src/index.js",
+    "build": "tsc -p ./",
+    "dev": "nodemon ./src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "path": "^0.12.7",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
