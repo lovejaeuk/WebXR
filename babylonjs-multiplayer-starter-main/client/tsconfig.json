@@ -1,5 +1,4 @@
 {
-    "extends": "../tsconfig.json",
     "compilerOptions": {
         "module": "esNext",
         "target": "es5",
@@ -8,11 +7,13 @@
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
-        "strictNullChecks": true,
+        "strictPropertyInitialization": false,
+        "strictNullChecks": false,
         "strictFunctionTypes": true,
         "skipLibCheck": true,
         "preserveConstEnums": true,
         "sourceMap": true,
+        "watch": false,
         "rootDir": "src"
     }
 }
